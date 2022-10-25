@@ -1,11 +1,13 @@
 @import url("reset.css");
 @import url("global.css");
+@import url("components/_navigator.css");
+@import url("components/_pills.css");
+@import url("components/_link-button.css");
 
 .s-wrapper {
   display: flex;
   height: 100vh;
   flex-flow: row nowrap;
-  background-color: blue;
 }
 
 .s-wrapper .s-left-column {
@@ -14,70 +16,61 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  position: fixed;
+  padding-right: 2rem;
+  left: 0;
+  top: 0;
 }
 
 .s-wrapper .s-main-content {
   height: 100%;
   width: 100%;
   padding-left: 130px;
-  position: relative;
   background-color: gray;
 }
 
-.s-navigator {
+.s-wrapper .s-main-content__top {
     height: 80vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.s-navigator ul li {
-    margin: 4rem;
-}
-
-.s-navigator ul li:first-child {
-    margin-top: 0;
-}
-
-.s-navigator ul li:last-child {
-    margin-bottom: 0;
-}
-
-.s-navigator ul li a {
-    color: #fff;
-    border: solid 2px #fff;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
+.s-wrapper .s-main-content__bottom {
+    height: 10vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.s-navigator::before {
-    content: "";
-    position: relative;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background-color: #fff;
+.s-wrapper .s-main-content .s-logo img {
+    margin-top: 3rem;
+    margin-left: 0;
+    margin-bottom: 2rem;
 }
 
-.s-navigator ul {
-    position: absolute;
+.s-wrapper .s-main-content .s-description {
+    background-color: rgba(0,0,0,.7);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.s-navigator ul li a:hover, .navigator ul li a.active {
-    color: var(--primary-color);
-    background-color: #fff;
+.s-wrapper .s-main-content__top .s-description .s-description__text p {
+    color: #fff;
+    line-height: 170%;
 }
 
-.s-navigator .s-navigator__icon {
-    position: absolute;
-    top: -3rem;
+.s-wrapper .s-main-content__top .s-description .pills {
+    margin-bottom: 20px;
 }
+
+.s-wrapper .s-main-content .s-links{
+    padding: 20px;
+    padding-left: 0;
+  }
+  
+  .s-wrapper .s-main-content .s-links ul{
+    display: flex;
+    flex-direction: row;
+  }
