@@ -12,14 +12,12 @@
   <img src="https://img.shields.io/static/v1?label=html&message=5.0&color=61DAFB&logo=html" />
   <img src="https://img.shields.io/static/v1?label=css&message=3.0&color=0088CC&logo=css" />
   <img src="https://img.shields.io/static/v1?label=js&message=ES6&color=yellow&logo=javascript" />
-  <img src="https://img.shields.io/badge/last%21commit-february-important" />
   <img src="https://img.shields.io/badge/license-MIT-success"/>
 </p>
 
 <p align="center">
   <a href="#-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-pré-requisitos">Pré-Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-rodando-a-aplicação-web">Frontend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licença">Lincença</a>
 </p>
